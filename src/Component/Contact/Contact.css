@@ -1,0 +1,54 @@
+.contact h2 {
+    font-family: "roboto", sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+    margin-top: 90px;
+   margin-left:550px;
+    color: #fff;
+  }
+  .contact h2 span {
+    color: #0ef;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+.contact-box {
+    flex: 5 5 10px;
+    background: #112e42;
+    padding: 50px 26px 50px;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+    border-radius: 40px;
+    border: 2px solid #1f242d;
+    transition: 0.3s ease-in;
+    color: #fff;
+    /* margin-top: 200px; */
+    margin-left: 450px; 
+  }
+  .contact-box i {
+    font-size: 50px;
+    color: #0ef;
+  }
+  .contact-box h3 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .contact-box h4 {
+    font-size: 13px;
+    line-height: 25px;
+    margin: 20px 30px 30px;
+    text-align: center;
+  }
+  .contact-box:hover {
+    border-color: #0ef;
+    transform: scale(1.02);
+    box-shadow: 1px 1px 20px #0ef;
+  }

@@ -1,0 +1,96 @@
+/*Skills selection */
+#services {
+    font-family: "Roboto",sans-serif;
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .sub-title {
+    text-align: center;
+    font-size: 60px;
+    margin-left: 20px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+  }
+  .sub-title span {
+    color: #0ef;
+  }
+  .container {
+    padding: 50px;
+  }
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 70px;
+    margin-top: 50px;
+    margin-left: 120px;
+  }
+  .services-list div {
+    background-color: transparent;
+    padding:20px 30px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #0ef, 1px 1px 20px #0ef;
+    /* box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7; */
+  }
+  .services-list div i {
+    font-size: 70px;
+    margin-bottom: 5px;
+    padding-bottom: -90px;
+    color: #0ef;
+    /* margin-left: 50px; */
+    margin-top: 10px;
+  }
+  .services-list div h2 {
+    font-size: 25px;
+    font-weight: 500;
+    /* margin-left: 50px; */
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .services-list div a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .services-list p{
+    font-size: 14.5px;
+    line-height: 25px;
+    text-align:justify;
+  
+  }
+  .read {
+    display: inline-block;
+    padding: -5px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #001b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  }
+  .read:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+  }
+  .services-list div:hover {
+    transform: translateY(-10px);
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
