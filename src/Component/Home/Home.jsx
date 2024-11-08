@@ -14,24 +14,26 @@ const Home = () => {
                 <h3>Hello, It's Me</h3>
                 <h2>MUTHU PANDI</h2>
                 <h3>And I'm <span>Full Stack Developer</span></h3>
+
                 <div className="social-media">
                 <a href={`https://wa.me/${whatsappNumber}`} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       aria-label="Chat with me on WhatsApp">
                     <i className="bx bxl-whatsapp"></i></a>
+                    
                     <a 
                       href={`mailto:${email}?subject=${subject}&body=${body}`}
                       aria-label="Send me an email">
                     <i className="bx bxl-gmail"></i></a>
+
                     <a href="#"><i className="bx bxl-github"></i></a>
                     <a 
                       href={linkedInProfile}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Connect with me on LinkedIn"
-                    >
-                        <i className="bx bxl-linkedin"></i>
+                      aria-label="Connect with me on LinkedIn">
+                     <i className="bx bxl-linkedin"></i>
                     </a>
                 </div>
 
