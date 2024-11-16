@@ -1,7 +1,7 @@
-/* Home-selection */
+/* Home Section */
 .home {
     display: flex;
-    justify-content: space-between; /* Distribute space between content and profile */
+    justify-content: space-between; 
     align-items: center; /* Center items vertically */
     font-family: "Roboto", sans-serif;
     width: 100%; /* Full width */
@@ -10,16 +10,20 @@
     padding: 50px 5%; /* Adjust padding for spacing */
     box-sizing: border-box; /* Include padding in width/height calculations */
     background: #1f242d; /* Optional: Background color for contrast */
+    transition: transform 0.3s ease; /* Smooth transition for section */
 }
 
+/* Content Section */
 .home-content {
     max-width: 600px; /* Limit the maximum width */
     flex: 1; /* Allow it to take up space */
+    transition: transform 0.3s ease; /* Add smooth transition */
 }
 
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
+    transition: transform 0.3s ease; /* Apply transform on hover */
 }
 
 .home-content h3 span {
@@ -30,6 +34,7 @@
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
+    transition: transform 0.3s ease; /* Apply transform on hover */
 }
 
 .home-content h3:nth-of-type(2) {
@@ -40,25 +45,29 @@
     font-size: 16px;
 }
 
+/* Profile Image */
 .profile {
     flex: 1; /* Allow it to take up space */
     display: flex;
     justify-content: center; /* Center image horizontally */
+    transition: transform 0.3s ease; /* Add smooth transition */
 }
 
 .profile img {
     max-width: 100%; /* Ensure the image scales properly */
     max-height: 500px; /* Limit the height */
     border-radius: 50%; /* Circular profile picture */
-    transition: 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Apply transition */
 }
 
 .profile img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
     background: #0ef; /* Background color on hover */
     color: #1f242d;
     box-shadow: 0 0 100px #0ef; /* Glow effect on hover */
 }
 
+/* Social Media Icons */
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -69,19 +78,20 @@
     border: 2px solid #0ef;
     border-radius: 50%;
     font-size: 30px;
-    /* padding: 2px; */
     color: #0ef;
     text-decoration: none;
     margin: 30px 15px 35px 0;
-    transition: 0.3s;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Apply transition */
 }
 
 .social-media a:hover {
+    transform: scale(1.2); /* Scale up the icons */
     background: #0ef;
     color: #1f242d;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 20px #0ef; /* Glow effect */
 }
 
+/* Download CV Button */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -93,4 +103,25 @@
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; /* Apply transition */
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* Lift the button on hover */
+    background: #fff;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef; /* Glow effect */
+}
+
+/* Additional Hover Effects for Entire Section */
+.home:hover {
+    transform: translateY(-5px); /* Slight lift on the whole section */
+}
+
+.home-content:hover {
+    transform: translateX(5px); /* Slight horizontal shift for the content */
+}
+
+.profile:hover {
+    transform: translateY(-5px); /* Slight lift for the profile image */
 }

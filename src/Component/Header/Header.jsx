@@ -7,7 +7,7 @@ var navicate = useNavigate();
   return (
     <div>
         <header class="header">
-    <a href="#" class="logo">Portfolio</a>
+    <a href="#" class="logo">PORTFOLIO</a>
     <nav class="navbar">
       <a onClick={() => navicate("/Home")}>Home</a>
       <a onClick={() => navicate("/About")}>About</a>
